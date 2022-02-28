@@ -28,6 +28,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.17" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +39,8 @@
     <None Remove="ClientApp\src\app\angular-material.module.ts" />
     <None Remove="ClientApp\src\app\cities\cities.component.ts" />
     <None Remove="ClientApp\src\app\cities\city.ts" />
+    <None Remove="ClientApp\src\app\countries\countries.component.ts" />
+    <None Remove="ClientApp\src\app\countries\country.ts" />
     <None Remove="Controllers\" />
     <Content Remove="wwwroot\img\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
@@ -51,7 +54,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\" />
-    <Folder Include="Data\" />
     <Folder Include="Data\Models\" />
     <Folder Include="Data\Source\" />
   </ItemGroup>
