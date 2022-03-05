@@ -41,6 +41,7 @@
     <None Remove="ClientApp\src\app\cities\city-edit.component.ts" />
     <None Remove="ClientApp\src\app\cities\city.ts" />
     <None Remove="ClientApp\src\app\countries\countries.component.ts" />
+    <None Remove="ClientApp\src\app\countries\country-edit.component.ts" />
     <None Remove="ClientApp\src\app\countries\country.ts" />
     <None Remove="Controllers\" />
     <Content Remove="wwwroot\img\" />
