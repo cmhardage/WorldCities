@@ -10,7 +10,7 @@ import { Country } from './../countries/Country';
 @Component({
   selector: 'app-country-edit',
   templateUrl: './country-edit.component.html',
-  styleUrls: ['.country-edit.component.css']
+  styleUrls: ['./country-edit.component.css']
 })
 export class CountryEditComponent implements OnInit {
   // the view title
@@ -45,14 +45,14 @@ export class CountryEditComponent implements OnInit {
       iso2: ['',
         [
           Validators.required,
-          Validators.pattern(/^[a-zA-Z],{2}$/)
+          Validators.pattern(/^[a-zA-Z]{2}$/)
         ],
         this.isDupeField("iso2")
       ],
       iso3: ['',
         [
           Validators.required,
-          Validators.pattern(/^[a-zA-Z],{3}$/)
+          Validators.pattern(/^[a-zA-Z]{3}$/)
         ],
         this.isDupeField("iso3")
       ]
@@ -83,7 +83,7 @@ export class CountryEditComponent implements OnInit {
     }
   }
 
-  OnSubmit() {
+  onSubmit() {
     var country = (this.id) ? this.country : <Country>{};
 
     country.name = this.form.get("name").value;
